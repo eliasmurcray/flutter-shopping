@@ -30,7 +30,8 @@ class _NewItemState extends State<NewItem> {
         _isSending = true;
       });
       final url = Uri.https(
-          'eliasmurcray-flutter-shopping-default-rtdb.firebaseio.com', 'shopping-list.json');
+          'eliasmurcray-flutter-shopping-default-rtdb.firebaseio.com',
+          'shopping-list.json');
       final response = await http.post(
         url,
         headers: {
